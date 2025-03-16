@@ -1,0 +1,9 @@
+name: todo-app
+services:
+  todo-backend:
+    build: 
+      context: .
+      dockerfile: ./Dockerfile
+    image: todo-backend:latest
+    ports:
+      - 3000:3000
