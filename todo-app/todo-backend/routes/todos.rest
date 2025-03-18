@@ -1,0 +1,15 @@
+## Get all todos
+GET http://localhost:3000/todos
+
+### GET single todo
+GET http://localhost:3000/todos/67d6b9faa46ca1e5e66b140b
+
+### PUT single todo
+PUT http://localhost:3000/todos/67d6b9faa46ca1e5e66b140b
+Content-Type: application/json
+
+{
+    "text": "Siabada",
+    "done": true,
+    "elko": "melko"
+}
