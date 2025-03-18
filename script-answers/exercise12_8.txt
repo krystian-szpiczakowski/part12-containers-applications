@@ -1,0 +1,137 @@
+Script started on 2025-03-18 21:02:55+01:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="216" LINES="23"]
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                        ]2;krystian@pvbs-laptop:~/fullstackopen/part12-containers-applications/todo-app/todo-backend]1;../todo-backend]7;file://pvbs-laptop/home/krystian/fullstackopen/part12-containers-applications/todo-app/todo-backend\[0m[27m[24m[J
+[1;36mpart12-containers-applications/todo-app/todo-backend[0m on [1;35m main[0m [1;31m[?][0m via [1;32m⬢ v20.17.0 [0m
+[1;32m❯[0m [K[?1h=[?2004hddocker compose -f ./docker-de  compose.dev.yml[1m [0m[0m up -d[?1l>[?2004l
+]2;docker compose -f ./docker-compose.dev.yml up -d]1;docker[1A[1B[0G[?25l[+] Running 0/1
+ [33m⠋[0m Network todo_local_dev_default  Creating                                                                                                                                                                        [34m0.1s [0m
+[?25h[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m Network todo_local_dev_default             [32mCreated[0m                                                                                                                                                              [34m0.1s [0m
+ [32m✔[0m Volume "todo_local_dev_todo_mongodb_data"  [32mCreated[0m                                                                                                                                                              [34m0.0s [0m
+ [33m⠋[0m Container todo_local_dev-mongo-1           Creating                                                                                                                                                             [34m0.0s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m Network todo_local_dev_default             [32mCreated[0m                                                                                                                                                              [34m0.1s [0m
+ [32m✔[0m Volume "todo_local_dev_todo_mongodb_data"  [32mCreated[0m                                                                                                                                                              [34m0.0s [0m
+ [33m⠙[0m Container todo_local_dev-mongo-1           Starting                                                                                                                                                             [34m0.1s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m Network todo_local_dev_default             [32mCreated[0m                                                                                                                                                              [34m0.1s [0m
+ [32m✔[0m Volume "todo_local_dev_todo_mongodb_data"  [32mCreated[0m                                                                                                                                                              [34m0.0s [0m
+ [33m⠹[0m Container todo_local_dev-mongo-1           Starting                                                                                                                                                             [34m0.2s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m Network todo_local_dev_default             [32mCreated[0m                                                                                                                                                              [34m0.1s [0m
+ [32m✔[0m Volume "todo_local_dev_todo_mongodb_data"  [32mCreated[0m                                                                                                                                                              [34m0.0s [0m
+ [33m⠸[0m Container todo_local_dev-mongo-1           Starting                                                                                                                                                             [34m0.3s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m Network todo_local_dev_default             [32mCreated[0m                                                                                                                                                              [34m0.1s [0m
+ [32m✔[0m Volume "todo_local_dev_todo_mongodb_data"  [32mCreated[0m                                                                                                                                                              [34m0.0s [0m
+ [33m⠼[0m Container todo_local_dev-mongo-1           Starting                                                                                                                                                             [34m0.4s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[34m[+] Running 3/3[0m
+ [32m✔[0m Network todo_local_dev_default             [32mCreated[0m                                                                                                                                                              [34m0.1s [0m
+ [32m✔[0m Volume "todo_local_dev_todo_mongodb_data"  [32mCreated[0m                                                                                                                                                              [34m0.0s [0m
+ [32m✔[0m Container todo_local_dev-mongo-1           [32mStarted[0m                                                                                                                                                              [34m0.4s [0m
+[?25h[1m[7m%[27m[1m[0m                                                                                                                                                                                                                        ]2;krystian@pvbs-laptop:~/fullstackopen/part12-containers-applications/todo-app/todo-backend]1;../todo-backend]7;file://pvbs-laptop/home/krystian/fullstackopen/part12-containers-applications/todo-app/todo-backend\[0m[27m[24m[J
+[1;36mpart12-containers-applications/todo-app/todo-backend[0m on [1;35m main[0m [1;31m[?][0m via [1;32m⬢ v20.17.0 [0mtook [1;33m5s[0m 
+[1;32m❯[0m [K[?1h=[?2004hddocker compose -f ./docker-compose.dev.yml[1m [0m[0m ps[?1l>[?2004l
+]2;docker compose -f ./docker-compose.dev.yml ps]1;dockerNAME                     IMAGE     COMMAND                  SERVICE   CREATED          STATUS          PORTS
+todo_local_dev-mongo-1   mongo     "docker-entrypoint.s…"   mongo     33 seconds ago   Up 32 seconds   0.0.0.0:3456->27017/tcp, [::]:3456->27017/tcp
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                        ]2;krystian@pvbs-laptop:~/fullstackopen/part12-containers-applications/todo-app/todo-backend]1;../todo-backend]7;file://pvbs-laptop/home/krystian/fullstackopen/part12-containers-applications/todo-app/todo-backend\[0m[27m[24m[J
+[1;36mpart12-containers-applications/todo-app/todo-backend[0m on [1;35m main[0m [1;31m[?][0m via [1;32m⬢ v20.17.0 [0mtook [1;33m4s[0m 
+[1;32m❯[0m [K[?1h=[?2004hddocker exec -it todo_local_dev-mong0 o-1 bash[?1l>[?2004l
+]2;docker exec -it todo_local_dev-mongo-1 bash]1;docker[?2004hroot@1b7bbec5d2fd:/# mongosh
+[?2004l]0;mongosh mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000Current Mongosh Log ID:	67d9d2023185b436f06b140a
+Connecting to:		[1m[32mmongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.4.2[0m
+Using MongoDB:		8.0.5
+[1m[33mUsing Mongosh[0m:		2.4.2
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+
+To help improve our products, anonymous usage data is collected and sent to MongoDB periodically (https://www.mongodb.com/legal/privacy-policy).
+You can opt-out by running the disableTelemetry() command.
+
+[1G[0J [1G[?2004h[1G[0Jtest> [7Guse the_dataabase[1G[0Jtest> use the_dataabas[23G[1G[0Jtest> use the_dataaba[22G[1G[0Jtest> use the_dataab[21G[1G[0Jtest> use the_dataa[20G[1G[0Jtest> use the_data[19Gbase
+switched to db the_database
+[1G[0Jthe_database> [15Gshow dbs
+Uncaught [1m[31mMongoServerError[0m[1m[31m[Unauthorized][0m: Command listDatabases requires authentication
+[1G[0Jthe_database> [15Gauth[1G[0Jthe_database> aut[18G[1G[0Jthe_database> au[17G[1G[0Jthe_database> a[16G[1G[0Jthe_database> [15Gdb.auth()[1D[1G[0Jthe_database> db.auth[44m([49m)[23G[1D[1G[0Jthe_database> db.auth([44m)[49m[22G[1C[1G[0Jthe_database> db.auth[44m([49m)[23G[1G[0Jthe_database> db.auth([32m")[39m[24G[1G[0Jthe_database> db.auth([32m"r)[39m[25G[1G[0Jthe_database> db.auth([32m"ro)[39m[26G[1G[0Jthe_database> db.auth([32m"roo)[39m[27G[1G[0Jthe_database> db.auth([32m"root)[39m[28G[1G[0Jthe_database> db.auth[44m([49m[32m"root"[39m)[29G[1G[0Jthe_database> db.auth[44m([49m[32m"root"[39m,)[30G[1G[0Jthe_database> db.auth[44m([49m[32m"root"[39m, )[31G[1G[0Jthe_database> db.auth([32m"root"[39m, [32m")[39m[32G[1G[0Jthe_database> db.auth([32m"root"[39m, [32m"e)[39m[33G[1G[0Jthe_database> db.auth([32m"root"[39m, [32m"ex)[39m[34G[1G[0Jthe_database> db.auth([32m"root"[39m, [32m"exa)[39m[35G[1G[0Jthe_database> db.auth([32m"root"[39m, [32m"exam)[39m[36G[1G[0Jthe_database> db.auth([32m"root"[39m, [32m"examp)[39m[37G[1G[0Jthe_database> db.auth([32m"root"[39m, [32m"exampl)[39m[38G[1G[0Jthe_database> db.auth([32m"root"[39m, [32m"example)[39m[39G[1G[0Jthe_database> db.auth[44m([49m[32m"root"[39m, [32m"example"[39m)[40G[1C[1G[0Jthe_database> db.auth([32m"root"[39m, [32m"example"[39m)[41G
+Uncaught [1m[31mMongoServerError[0m[1m[31m[AuthenticationFailed][0m: Authentication failed.
+[1G[0Jthe_database> [15Guse admin
+switched to db admin
+[1G[0Jadmin> [8Gshow dbs
+Uncaught [1m[31mMongoServerError[0m[1m[31m[Unauthorized][0m: Command listDatabases requires authentication
+[1G[0Jadmin> [8Gdb.auth([32m"[39m[32mr[39m[32mo[39m[32mo[39m[32mt[39m[32m"[39m, [32m"[39m[32m"[39m[1D[1G[0Jadmin> db.auth([32m"root"[39m, [44m[32m"[49m"[39m[25G[1G[0Jadmin> db.auth([32m"root"[39m, [44m[32m"[49me"[39m[26G[1G[0Jadmin> db.auth([32m"root"[39m, [44m[32m"[49mex"[39m[27G[1G[0Jadmin> db.auth([32m"root"[39m, [44m[32m"[49mexa"[39m[28G[1G[0Jadmin> db.auth([32m"root"[39m, [44m[32m"[49mexam"[39m[29G[1G[0Jadmin> db.auth([32m"root"[39m, [44m[32m"[49mexamp"[39m[30G[1G[0Jadmin> db.auth([32m"root"[39m, [44m[32m"[49mexampl"[39m[31G[1G[0Jadmin> db.auth([32m"root"[39m, [44m[32m"[49mexample"[39m[32G[1C[1G[0Jadmin> db.auth([32m"root"[39m, [32m"example"[39m[33G)
+{ ok: [33m1[39m }
+[1G[0Jadmin> [8Guse the_database
+switched to db the_database
+[1G[0Jthe_database> [15Gshow dbs
+[1madmin[0m         100.00 KiB
+[1mconfig[0m         12.00 KiB
+[1mlocal[0m          72.00 KiB
+[1mthe_database[0m   40.00 KiB
+[1G[0Jthe_database> [15Gshow collection
+Uncaught [1m[31mMongoshInvalidInputError[0m: [COMMON-10001] 'collection' is not a valid argument for "show".
+[1G[0Jthe_database> [15G[1G[0Jthe_database> show collection[30Gs
+[1mtodos[0m
+[1G[0Jthe_database> [15Gdb.todos.insert(
+[1G[0J... [5G{text[33mtext[39m: brush your teeth[32m"[39m[1D[1G[0J... {[33mtext[39m: brush your teeth[32m"[39m[28G[5D[1G[0J... {[33mtext[39m: brush your teeth[32m"[39m[23G[5D[6D[1G[0J... {[33mtext[39m: [32m"brush your teeth"[39m[13G[17C, d[36mdo[39mdone=[1G[0J... {[33mtext[39m: [32m"brush your teeth"[39m, done[36G: fals[33mfalse[39m}
+[1G[0J... [5G)
+DeprecationWarning: Collection.insert() is deprecated. Use insertOne, insertMany, or bulkWrite.
+{
+  acknowledged: [33mtrue[39m,
+  insertedIds: { [32m'0'[39m: ObjectId([32m'67d9d3463185b436f06b140b'[39m) }
+}
+[1G[0Jthe_database> [15Gdb.todos.find({})
+[
+  {
+    _id: ObjectId([32m'67d9d1b112529a09fc6b140b'[39m),
+    text: [32m'Write code'[39m,
+    done: [33mtrue[39m
+  },
+  {
+    _id: ObjectId([32m'67d9d1b112529a09fc6b140c'[39m),
+    text: [32m'Learn about containers'[39m,
+    done: [33mfalse[39m
+  },
+  {
+    _id: ObjectId([32m'67d9d3463185b436f06b140b'[39m),
+    text: [32m'brush your teeth'[39m,
+    done: [33mfalse[39m
+  }
+]
+[1G[0Jthe_database> [15Gdb.todos.insert()[1G[0Jthe_database> db.todos.insert([31G
+[1G[0J... [5G{ tx[1G[0J... { t[8Gext[33mtext[39m: [32m"[39m[32mI[39m[32mn[39m[32mc[39m[32mr[39m[32me[39m[32ma[39m[32ms[39m[32me[39m [32mt[39m[32mh[39m[32me[39m [32mn[39m[32mu[39m[32mm[39m[32mb[39m[32me[39m[32mr[39m [32mo[39m[32mf[39m [32mt[39m[32mo[39m[32mo[39m[32ml[39m[32ms[39m [32mi[39m[32mn[39m [32mm[39m[32my[39m [32mt[39m[32mo[39m[32mo[39m[32ml[39m [32mb[39m[32me[39m[32ml[39m[32mt[39m[32m"[39m, d[36mdo[39mdone: fals[33mfalse[39m}[1D[1G[0J... [44m{[49m [33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m}[72G[1G[0J... [44m{[49m [33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m }[73G[1C[1G[0J... { [33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m }[74G)[1G[0J... { [33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m }[74G
+[1G[0J... [5G)
+{
+  acknowledged: [33mtrue[39m,
+  insertedIds: { [32m'0'[39m: ObjectId([32m'67d9d3843185b436f06b140c'[39m) }
+}
+[1G[0Jthe_database> [15Gdb.find[1G[0Jthe_database> db.fin[21G[1G[0Jthe_database> db.fi[20G[1G[0Jthe_database> db.f[19G[1G[0Jthe_database> db.[18Gtodos.find({})
+[
+  {
+    _id: ObjectId([32m'67d9d1b112529a09fc6b140b'[39m),
+    text: [32m'Write code'[39m,
+    done: [33mtrue[39m
+  },
+  {
+    _id: ObjectId([32m'67d9d1b112529a09fc6b140c'[39m),
+    text: [32m'Learn about containers'[39m,
+    done: [33mfalse[39m
+  },
+  {
+    _id: ObjectId([32m'67d9d3463185b436f06b140b'[39m),
+    text: [32m'brush your teeth'[39m,
+    done: [33mfalse[39m
+  },
+  {
+    _id: ObjectId([32m'67d9d3843185b436f06b140c'[39m),
+    text: [32m'Increase the number of tools in my tool belt'[39m,
+    done: [33mfalse[39m
+  }
+]
+[1G[0Jthe_database> [15Gexit
+[?2004l[?2004hroot@1b7bbec5d2fd:/# exit
+[?2004lexit
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                        ]2;krystian@pvbs-laptop:~/fullstackopen/part12-containers-applications/todo-app/todo-backend]1;../todo-backend]7;file://pvbs-laptop/home/krystian/fullstackopen/part12-containers-applications/todo-app/todo-backend\[0m[27m[24m[J
+[1;36mpart12-containers-applications/todo-app/todo-backend[0m on [1;35m main[0m [1;31m[?][0m via [1;32m⬢ v20.17.0 [0mtook [1;33m6m51s[0m 
+[1;32m❯[0m [K[?1h=[?2004heexit[?1l>[?2004l
+]2;exit]1;exit
+Script done on 2025-03-18 21:12:04+01:00 [COMMAND_EXIT_CODE="0"]
