@@ -13,3 +13,14 @@ Content-Type: application/json
     "done": true,
     "elko": "melko"
 }
+
+### POST single todo
+POST http://localhost:3000/todos
+Content-Type: application/json
+
+{
+    "text": "Jou"
+}
+
+### GET statistics
+GET http://localhost:3000/todos/statistics
